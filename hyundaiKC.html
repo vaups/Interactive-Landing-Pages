@@ -13,9 +13,8 @@
 	<meta charset="utf-8" />
 	<meta content="width=device-width" name="viewport" />
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css" />
-	<script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	<style>
 		.bee-row,
 		.bee-row-content {
@@ -25,6 +24,10 @@
 		.bee-row-2,
 		.bee-row-2 .bee-row-content {
 			background-size: auto
+		}
+
+		.bee-html-block {
+			text-align: center
 		}
 
 		body {
@@ -81,6 +84,10 @@
 			flex-basis: 50%
 		}
 
+		.bee-row-content .bee-col-w9 {
+			flex-basis: 75%
+		}
+
 		.bee-row-content .bee-col-w10 {
 			flex-basis: 83%
 		}
@@ -114,49 +121,48 @@
 			min-width: 177.77vh
 		}
 
-		.bee-html-block {
-			text-align: center
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
 		}
 
-		.bee-divider,
 		.bee-image {
 			overflow: auto
 		}
 
-		.bee-divider .center,
 		.bee-image .bee-center {
 			margin: 0 auto
 		}
 
 		.bee-row-2 .bee-col-1 .bee-block-7,
-		.bee-row-2 .bee-col-2 .bee-block-7,
-		.bee-row-34 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-2 .bee-block-6,
+		.bee-row-2 .bee-col-3 .bee-block-1,
+		.bee-row-28 .bee-col-1 .bee-block-1,
+		.bee-row-31 .bee-col-1 .bee-block-1,
 		.bee-row-37 .bee-col-1 .bee-block-1,
-		.bee-row-43 .bee-col-1 .bee-block-1,
-		.bee-row-43 .bee-col-2 .bee-block-1,
-		.bee-row-43 .bee-col-3 .bee-block-1,
-		.bee-row-43 .bee-col-4 .bee-block-1,
-		.bee-row-45 .bee-col-1 .bee-block-1,
-		.bee-row-45 .bee-col-2 .bee-block-1,
-		.bee-row-45 .bee-col-3 .bee-block-1,
-		.bee-row-45 .bee-col-4 .bee-block-1,
-		.bee-row-46 .bee-col-1 .bee-block-1,
-		.bee-row-46 .bee-col-2 .bee-block-1,
-		.bee-row-47 .bee-col-1 .bee-block-1,
-		.bee-row-47 .bee-col-2 .bee-block-1,
+		.bee-row-37 .bee-col-2 .bee-block-1,
+		.bee-row-37 .bee-col-3 .bee-block-1,
+		.bee-row-37 .bee-col-4 .bee-block-1,
+		.bee-row-38 .bee-col-1 .bee-block-1,
+		.bee-row-38 .bee-col-2 .bee-block-1,
+		.bee-row-38 .bee-col-3 .bee-block-1,
+		.bee-row-38 .bee-col-4 .bee-block-1,
+		.bee-row-39 .bee-col-1 .bee-block-1,
+		.bee-row-39 .bee-col-2 .bee-block-1,
+		.bee-row-40 .bee-col-1 .bee-block-1,
+		.bee-row-40 .bee-col-2 .bee-block-1,
+		.bee-row-41 .bee-col-1 .bee-block-1,
+		.bee-row-41 .bee-col-2 .bee-block-1,
+		.bee-row-42 .bee-col-1 .bee-block-1,
+		.bee-row-42 .bee-col-2 .bee-block-1,
 		.bee-row-48 .bee-col-1 .bee-block-1,
 		.bee-row-48 .bee-col-2 .bee-block-1,
-		.bee-row-49 .bee-col-1 .bee-block-1,
-		.bee-row-49 .bee-col-2 .bee-block-1,
-		.bee-row-55 .bee-col-1 .bee-block-1,
-		.bee-row-55 .bee-col-2 .bee-block-1,
-		.bee-row-55 .bee-col-3 .bee-block-1,
-		.bee-row-61 .bee-col-1 .bee-block-1,
-		.bee-row-61 .bee-col-2 .bee-block-1,
-		.bee-row-67 .bee-col-1 .bee-block-1,
-		.bee-row-67 .bee-col-2 .bee-block-1,
-		.bee-row-68 .bee-col-1 .bee-block-1,
-		.bee-row-68 .bee-col-2 .bee-block-1 {
+		.bee-row-48 .bee-col-3 .bee-block-1,
+		.bee-row-54 .bee-col-1 .bee-block-1,
+		.bee-row-54 .bee-col-2 .bee-block-1,
+		.bee-row-59 .bee-col-1 .bee-block-1,
+		.bee-row-59 .bee-col-2 .bee-block-1,
+		.bee-row-60 .bee-col-1 .bee-block-1,
+		.bee-row-60 .bee-col-2 .bee-block-1 {
 			width: 100%
 		}
 
@@ -220,20 +226,22 @@
 		.bee-row-61 .bee-row-content,
 		.bee-row-62 .bee-row-content,
 		.bee-row-63 .bee-row-content,
-		.bee-row-64 .bee-row-content,
-		.bee-row-65 .bee-row-content,
-		.bee-row-66 .bee-row-content,
-		.bee-row-67 .bee-row-content,
-		.bee-row-68 .bee-row-content,
-		.bee-row-69 .bee-row-content,
 		.bee-row-7 .bee-row-content,
-		.bee-row-70 .bee-row-content,
-		.bee-row-71 .bee-row-content,
 		.bee-row-8 .bee-row-content,
 		.bee-row-9 .bee-row-content {
 			background-repeat: no-repeat;
 			border-radius: 0;
 			color: #000
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
 		}
 
 		.bee-image img {
@@ -300,15 +308,7 @@
 		.bee-row-61,
 		.bee-row-62,
 		.bee-row-63,
-		.bee-row-64,
-		.bee-row-65,
-		.bee-row-66,
-		.bee-row-67,
-		.bee-row-68,
-		.bee-row-69,
 		.bee-row-7,
-		.bee-row-70,
-		.bee-row-71,
 		.bee-row-8,
 		.bee-row-9 {
 			background-repeat: no-repeat
@@ -317,9 +317,8 @@
 		.bee-row-1 .bee-col-1,
 		.bee-row-11 .bee-col-1,
 		.bee-row-12 .bee-col-1,
-		.bee-row-12 .bee-col-2,
 		.bee-row-13 .bee-col-1,
-		.bee-row-13 .bee-col-2,
+		.bee-row-14 .bee-col-1,
 		.bee-row-15 .bee-col-1,
 		.bee-row-16 .bee-col-1,
 		.bee-row-17 .bee-col-1,
@@ -331,40 +330,25 @@
 		.bee-row-23 .bee-col-1,
 		.bee-row-24 .bee-col-1,
 		.bee-row-25 .bee-col-1,
-		.bee-row-26 .bee-col-1,
-		.bee-row-27 .bee-col-1,
-		.bee-row-28 .bee-col-1,
-		.bee-row-29 .bee-col-1,
 		.bee-row-3 .bee-col-1,
-		.bee-row-30 .bee-col-1,
-		.bee-row-31 .bee-col-1,
-		.bee-row-38 .bee-col-1,
-		.bee-row-38 .bee-col-2,
-		.bee-row-39 .bee-col-1,
+		.bee-row-33 .bee-col-1,
+		.bee-row-34 .bee-col-1,
+		.bee-row-35 .bee-col-1,
 		.bee-row-4 .bee-col-1,
-		.bee-row-40 .bee-col-1,
 		.bee-row-44 .bee-col-1,
+		.bee-row-45 .bee-col-1,
+		.bee-row-46 .bee-col-1,
 		.bee-row-5 .bee-col-1,
 		.bee-row-50 .bee-col-1,
-		.bee-row-50 .bee-col-2,
 		.bee-row-51 .bee-col-1,
 		.bee-row-52 .bee-col-1,
 		.bee-row-56 .bee-col-1,
-		.bee-row-56 .bee-col-2,
 		.bee-row-57 .bee-col-1,
-		.bee-row-58 .bee-col-1,
-		.bee-row-62 .bee-col-1,
-		.bee-row-62 .bee-col-2,
-		.bee-row-63 .bee-col-1,
-		.bee-row-64 .bee-col-1,
-		.bee-row-67 .bee-col-1,
-		.bee-row-67 .bee-col-2,
-		.bee-row-68 .bee-col-1,
-		.bee-row-68 .bee-col-2,
-		.bee-row-69 .bee-col-1,
-		.bee-row-69 .bee-col-2,
-		.bee-row-7 .bee-col-1,
-		.bee-row-71 .bee-col-1 {
+		.bee-row-59 .bee-col-1,
+		.bee-row-59 .bee-col-2,
+		.bee-row-60 .bee-col-1,
+		.bee-row-60 .bee-col-2,
+		.bee-row-63 .bee-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
@@ -374,7 +358,8 @@
 		}
 
 		.bee-row-2 .bee-col-1,
-		.bee-row-2 .bee-col-2 {
+		.bee-row-2 .bee-col-2,
+		.bee-row-2 .bee-col-3 {
 			padding-bottom: 5px;
 			padding-top: 5px;
 			display: flex;
@@ -382,62 +367,46 @@
 			justify-content: flex-end
 		}
 
-		.bee-row-12 .bee-col-1 .bee-block-1,
-		.bee-row-12 .bee-col-2 .bee-block-1,
-		.bee-row-13 .bee-col-1 .bee-block-1,
-		.bee-row-13 .bee-col-2 .bee-block-1,
-		.bee-row-14 .bee-col-1 .bee-block-2,
 		.bee-row-2 .bee-col-1 .bee-block-2,
 		.bee-row-2 .bee-col-1 .bee-block-4,
-		.bee-row-32 .bee-col-1 .bee-block-1,
-		.bee-row-32 .bee-col-1 .bee-block-2,
-		.bee-row-33 .bee-col-1 .bee-block-2,
-		.bee-row-33 .bee-col-2 .bee-block-2,
-		.bee-row-33 .bee-col-3 .bee-block-2,
-		.bee-row-33 .bee-col-4 .bee-block-2,
-		.bee-row-34 .bee-col-1 .bee-block-2,
-		.bee-row-34 .bee-col-2 .bee-block-2,
-		.bee-row-35 .bee-col-1 .bee-block-2,
-		.bee-row-35 .bee-col-2 .bee-block-2,
+		.bee-row-26 .bee-col-1 .bee-block-2,
+		.bee-row-27 .bee-col-1 .bee-block-2,
+		.bee-row-27 .bee-col-2 .bee-block-2,
+		.bee-row-27 .bee-col-3 .bee-block-2,
+		.bee-row-27 .bee-col-4 .bee-block-2,
+		.bee-row-28 .bee-col-1 .bee-block-2,
+		.bee-row-28 .bee-col-2 .bee-block-2,
+		.bee-row-29 .bee-col-1 .bee-block-2,
+		.bee-row-29 .bee-col-2 .bee-block-2,
+		.bee-row-30 .bee-col-1 .bee-block-2,
+		.bee-row-30 .bee-col-2 .bee-block-2,
+		.bee-row-31 .bee-col-1 .bee-block-2,
+		.bee-row-31 .bee-col-2 .bee-block-2,
 		.bee-row-36 .bee-col-1 .bee-block-2,
-		.bee-row-36 .bee-col-2 .bee-block-2,
 		.bee-row-37 .bee-col-1 .bee-block-2,
 		.bee-row-37 .bee-col-2 .bee-block-2,
-		.bee-row-42 .bee-col-1 .bee-block-1,
+		.bee-row-37 .bee-col-3 .bee-block-2,
+		.bee-row-37 .bee-col-4 .bee-block-2,
+		.bee-row-38 .bee-col-1 .bee-block-2,
+		.bee-row-38 .bee-col-2 .bee-block-2,
+		.bee-row-38 .bee-col-3 .bee-block-2,
+		.bee-row-38 .bee-col-4 .bee-block-2,
+		.bee-row-39 .bee-col-1 .bee-block-2,
+		.bee-row-39 .bee-col-2 .bee-block-2,
+		.bee-row-40 .bee-col-1 .bee-block-2,
+		.bee-row-40 .bee-col-2 .bee-block-2,
+		.bee-row-41 .bee-col-1 .bee-block-2,
+		.bee-row-41 .bee-col-2 .bee-block-2,
 		.bee-row-42 .bee-col-1 .bee-block-2,
-		.bee-row-43 .bee-col-1 .bee-block-2,
-		.bee-row-43 .bee-col-2 .bee-block-2,
-		.bee-row-43 .bee-col-3 .bee-block-2,
-		.bee-row-43 .bee-col-4 .bee-block-2,
-		.bee-row-45 .bee-col-1 .bee-block-2,
-		.bee-row-45 .bee-col-2 .bee-block-2,
-		.bee-row-45 .bee-col-3 .bee-block-2,
-		.bee-row-45 .bee-col-4 .bee-block-2,
-		.bee-row-46 .bee-col-1 .bee-block-2,
-		.bee-row-46 .bee-col-2 .bee-block-2,
+		.bee-row-42 .bee-col-2 .bee-block-2,
 		.bee-row-47 .bee-col-1 .bee-block-2,
-		.bee-row-47 .bee-col-2 .bee-block-2,
 		.bee-row-48 .bee-col-1 .bee-block-2,
 		.bee-row-48 .bee-col-2 .bee-block-2,
-		.bee-row-49 .bee-col-1 .bee-block-2,
-		.bee-row-49 .bee-col-2 .bee-block-2,
-		.bee-row-54 .bee-col-1 .bee-block-1,
+		.bee-row-48 .bee-col-3 .bee-block-2,
+		.bee-row-53 .bee-col-1 .bee-block-2,
 		.bee-row-54 .bee-col-1 .bee-block-2,
-		.bee-row-55 .bee-col-1 .bee-block-2,
-		.bee-row-55 .bee-col-2 .bee-block-2,
-		.bee-row-55 .bee-col-3 .bee-block-2,
-		.bee-row-6 .bee-col-1 .bee-block-1,
-		.bee-row-6 .bee-col-1 .bee-block-2,
-		.bee-row-60 .bee-col-1 .bee-block-1,
-		.bee-row-60 .bee-col-1 .bee-block-2,
-		.bee-row-61 .bee-col-1 .bee-block-2,
-		.bee-row-61 .bee-col-2 .bee-block-2,
-		.bee-row-66 .bee-col-1 .bee-block-1,
-		.bee-row-66 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-1 .bee-block-1,
-		.bee-row-8 .bee-col-2 .bee-block-1,
-		.bee-row-8 .bee-col-3 .bee-block-1,
-		.bee-row-8 .bee-col-4 .bee-block-1 {
+		.bee-row-54 .bee-col-2 .bee-block-2,
+		.bee-row-58 .bee-col-1 .bee-block-2 {
 			padding: 10px;
 			text-align: center;
 			width: 100%
@@ -445,28 +414,37 @@
 
 		.bee-row-10 .bee-col-1,
 		.bee-row-10 .bee-col-2,
-		.bee-row-14 .bee-col-1,
-		.bee-row-14 .bee-col-2,
+		.bee-row-26 .bee-col-1,
+		.bee-row-26 .bee-col-2,
 		.bee-row-32 .bee-col-1,
 		.bee-row-32 .bee-col-2,
-		.bee-row-41 .bee-col-1,
-		.bee-row-42 .bee-col-1,
-		.bee-row-42 .bee-col-2,
+		.bee-row-36 .bee-col-1,
+		.bee-row-36 .bee-col-2,
+		.bee-row-43 .bee-col-1,
+		.bee-row-43 .bee-col-2,
+		.bee-row-47 .bee-col-1,
+		.bee-row-47 .bee-col-2,
+		.bee-row-49 .bee-col-1,
+		.bee-row-49 .bee-col-2,
 		.bee-row-53 .bee-col-1,
-		.bee-row-54 .bee-col-1,
-		.bee-row-54 .bee-col-2,
-		.bee-row-59 .bee-col-1,
+		.bee-row-53 .bee-col-2,
+		.bee-row-55 .bee-col-1,
+		.bee-row-55 .bee-col-2,
+		.bee-row-58 .bee-col-1,
+		.bee-row-58 .bee-col-2,
 		.bee-row-6 .bee-col-1,
 		.bee-row-6 .bee-col-2,
-		.bee-row-60 .bee-col-1,
-		.bee-row-60 .bee-col-2,
-		.bee-row-65 .bee-col-1,
-		.bee-row-66 .bee-col-1,
-		.bee-row-66 .bee-col-2,
-		.bee-row-70 .bee-col-1,
+		.bee-row-61 .bee-col-1,
+		.bee-row-61 .bee-col-2,
+		.bee-row-62 .bee-col-1,
+		.bee-row-7 .bee-col-1,
+		.bee-row-7 .bee-col-2,
+		.bee-row-7 .bee-col-3,
+		.bee-row-7 .bee-col-4,
+		.bee-row-8 .bee-col-1,
+		.bee-row-8 .bee-col-2,
 		.bee-row-9 .bee-col-1,
-		.bee-row-9 .bee-col-2,
-		.bee-row-9 .bee-col-3 {
+		.bee-row-9 .bee-col-2 {
 			padding-bottom: 5px;
 			padding-top: 5px;
 			display: flex;
@@ -474,121 +452,267 @@
 			justify-content: center
 		}
 
-		.bee-row-8 .bee-col-1,
-		.bee-row-8 .bee-col-2,
-		.bee-row-8 .bee-col-3,
-		.bee-row-8 .bee-col-4 {
-			padding: 5px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
+		.bee-row-6 .bee-col-1 .bee-block-1 {
+			color: #17a8e3;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: normal;
+			text-align: left
 		}
 
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			padding: 30px 10px 10px;
+		.bee-row-6 .bee-col-1 .bee-block-2 {
+			padding: 10px 10px 20px;
 			text-align: center;
 			width: 100%
 		}
 
-		.bee-row-14 .bee-col-1 .bee-block-3 {
-			padding-bottom: 20px;
-			padding-left: 10px;
-			padding-right: 10px
+		.bee-row-7 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-1,
+		.bee-row-7 .bee-col-3 .bee-block-1,
+		.bee-row-7 .bee-col-4 .bee-block-1,
+		.bee-row-8 .bee-col-1 .bee-block-1,
+		.bee-row-8 .bee-col-2 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-2,
+		.bee-row-9 .bee-col-2 .bee-block-2 {
+			color: #003459;
+			font-family: inherit;
+			font-size: 26px;
+			font-weight: 700;
+			text-align: center
 		}
 
-		.bee-row-33 .bee-col-1,
-		.bee-row-33 .bee-col-2,
-		.bee-row-33 .bee-col-3,
-		.bee-row-33 .bee-col-4,
-		.bee-row-35 .bee-col-1,
-		.bee-row-35 .bee-col-2,
-		.bee-row-46 .bee-col-1,
-		.bee-row-46 .bee-col-2,
-		.bee-row-47 .bee-col-1,
-		.bee-row-47 .bee-col-2,
-		.bee-row-48 .bee-col-1,
-		.bee-row-48 .bee-col-2,
-		.bee-row-49 .bee-col-1,
-		.bee-row-49 .bee-col-2 {
+		.bee-row-7 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-2,
+		.bee-row-7 .bee-col-4 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-2,
+		.bee-row-8 .bee-col-2 .bee-block-2,
+		.bee-row-9 .bee-col-1 .bee-block-3,
+		.bee-row-9 .bee-col-2 .bee-block-3 {
+			padding-bottom: 15px;
+			padding-left: 60px;
+			padding-right: 60px;
+			width: 100%
+		}
+
+		.bee-row-26 .bee-col-1 .bee-block-1,
+		.bee-row-36 .bee-col-1 .bee-block-1,
+		.bee-row-47 .bee-col-1 .bee-block-1,
+		.bee-row-53 .bee-col-1 .bee-block-1 {
+			color: #17a8e3;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: normal;
+			padding-left: 5px;
+			text-align: left
+		}
+
+		.bee-row-27 .bee-col-1,
+		.bee-row-27 .bee-col-2,
+		.bee-row-27 .bee-col-3,
+		.bee-row-27 .bee-col-4,
+		.bee-row-29 .bee-col-1,
+		.bee-row-29 .bee-col-2,
+		.bee-row-39 .bee-col-1,
+		.bee-row-39 .bee-col-2,
+		.bee-row-40 .bee-col-1,
+		.bee-row-40 .bee-col-2,
+		.bee-row-41 .bee-col-1,
+		.bee-row-41 .bee-col-2,
+		.bee-row-42 .bee-col-1,
+		.bee-row-42 .bee-col-2 {
 			padding: 20px
 		}
 
-		.bee-row-33 .bee-col-1 .bee-block-1,
-		.bee-row-33 .bee-col-2 .bee-block-1,
-		.bee-row-33 .bee-col-3 .bee-block-1,
-		.bee-row-33 .bee-col-4 .bee-block-1,
-		.bee-row-34 .bee-col-2 .bee-block-1,
-		.bee-row-35 .bee-col-1 .bee-block-1,
-		.bee-row-35 .bee-col-2 .bee-block-1,
-		.bee-row-36 .bee-col-1 .bee-block-1,
-		.bee-row-36 .bee-col-2 .bee-block-1,
-		.bee-row-37 .bee-col-2 .bee-block-1 {
+		.bee-row-27 .bee-col-1 .bee-block-1,
+		.bee-row-27 .bee-col-2 .bee-block-1,
+		.bee-row-27 .bee-col-3 .bee-block-1,
+		.bee-row-27 .bee-col-4 .bee-block-1,
+		.bee-row-28 .bee-col-2 .bee-block-1,
+		.bee-row-29 .bee-col-1 .bee-block-1,
+		.bee-row-29 .bee-col-2 .bee-block-1,
+		.bee-row-30 .bee-col-1 .bee-block-1,
+		.bee-row-30 .bee-col-2 .bee-block-1,
+		.bee-row-31 .bee-col-2 .bee-block-1 {
 			padding: 5px;
 			width: 100%
 		}
 
-		.bee-row-34 .bee-col-1,
-		.bee-row-34 .bee-col-2,
-		.bee-row-34 .bee-col-3,
-		.bee-row-34 .bee-col-4,
-		.bee-row-36 .bee-col-1,
-		.bee-row-36 .bee-col-2,
-		.bee-row-37 .bee-col-1,
-		.bee-row-37 .bee-col-2 {
+		.bee-row-28 .bee-col-1,
+		.bee-row-28 .bee-col-2,
+		.bee-row-28 .bee-col-3,
+		.bee-row-28 .bee-col-4,
+		.bee-row-30 .bee-col-1,
+		.bee-row-30 .bee-col-2,
+		.bee-row-31 .bee-col-1,
+		.bee-row-31 .bee-col-2 {
 			padding: 20px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center
 		}
 
-		.bee-row-43 .bee-col-1,
-		.bee-row-43 .bee-col-2,
-		.bee-row-43 .bee-col-3,
-		.bee-row-43 .bee-col-4,
-		.bee-row-45 .bee-col-1,
-		.bee-row-45 .bee-col-2,
-		.bee-row-45 .bee-col-3,
-		.bee-row-45 .bee-col-4,
-		.bee-row-55 .bee-col-1,
-		.bee-row-55 .bee-col-2,
-		.bee-row-55 .bee-col-3,
-		.bee-row-61 .bee-col-1,
-		.bee-row-61 .bee-col-2 {
+		.bee-row-26 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-36 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-37 .bee-col-1,
+		.bee-row-37 .bee-col-2,
+		.bee-row-37 .bee-col-3,
+		.bee-row-37 .bee-col-4,
+		.bee-row-38 .bee-col-1,
+		.bee-row-38 .bee-col-2,
+		.bee-row-38 .bee-col-3,
+		.bee-row-38 .bee-col-4,
+		.bee-row-47 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-48 .bee-col-1,
+		.bee-row-48 .bee-col-2,
+		.bee-row-48 .bee-col-3,
+		.bee-row-53 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-54 .bee-col-1,
+		.bee-row-54 .bee-col-2,
+		.bee-row-58 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-8 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-8 .bee-col-2 .bee-block-1 .bee-icon-image,
+		.bee-row-9 .bee-col-1 .bee-block-2 .bee-icon-image,
+		.bee-row-9 .bee-col-2 .bee-block-2 .bee-icon-image {
 			padding: 5px
+		}
+
+		.bee-row-58 .bee-col-1 .bee-block-1 {
+			color: #17a8e3;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: normal;
+			padding-left: 10px;
+			text-align: left
 		}
 
 		@media (max-width:1210px) {
 
-			.bee-row-8 .bee-col-1,
-			.bee-row-9 .bee-col-1 {
-				padding: 5px 16px !important
-			}
-
-			.bee-row-17 .bee-col-1 {
-				padding: 0 !important
-			}
-
-			.bee-row-35 .bee-col-1,
-			.bee-row-35 .bee-col-2,
-			.bee-row-36 .bee-col-1,
-			.bee-row-36 .bee-col-2,
-			.bee-row-37 .bee-col-1,
-			.bee-row-37 .bee-col-2,
-			.bee-row-46 .bee-col-1,
-			.bee-row-46 .bee-col-2,
-			.bee-row-47 .bee-col-1,
-			.bee-row-47 .bee-col-2,
+			.bee-row-29 .bee-col-1,
+			.bee-row-29 .bee-col-2,
+			.bee-row-30 .bee-col-1,
+			.bee-row-30 .bee-col-2,
+			.bee-row-31 .bee-col-1,
+			.bee-row-31 .bee-col-2,
+			.bee-row-39 .bee-col-1,
+			.bee-row-39 .bee-col-2,
+			.bee-row-40 .bee-col-1,
+			.bee-row-40 .bee-col-2,
+			.bee-row-41 .bee-col-1,
+			.bee-row-41 .bee-col-2,
+			.bee-row-42 .bee-col-1,
+			.bee-row-42 .bee-col-2,
 			.bee-row-48 .bee-col-1,
 			.bee-row-48 .bee-col-2,
+			.bee-row-48 .bee-col-3,
+			.bee-row-54 .bee-col-1,
+			.bee-row-54 .bee-col-2,
+			.bee-row-8 .bee-col-1,
+			.bee-row-8 .bee-col-2,
+			.bee-row-9 .bee-col-1,
+			.bee-row-9 .bee-col-2 {
+				padding: 5px !important
+			}
+
+			.bee-row-10 .bee-col-1,
+			.bee-row-10 .bee-col-2,
+			.bee-row-14 .bee-col-1,
+			.bee-row-32 .bee-col-1,
+			.bee-row-32 .bee-col-2,
+			.bee-row-43 .bee-col-1,
+			.bee-row-43 .bee-col-2,
 			.bee-row-49 .bee-col-1,
 			.bee-row-49 .bee-col-2,
 			.bee-row-55 .bee-col-1,
 			.bee-row-55 .bee-col-2,
-			.bee-row-55 .bee-col-3,
 			.bee-row-61 .bee-col-1,
 			.bee-row-61 .bee-col-2 {
-				padding: 5px !important
+				padding: 0 !important
 			}
+		}
+
+		.bee-row-26 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-36 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-47 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-53 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-58 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-7 .bee-col-3 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-7 .bee-col-4 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-8 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-8 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-9 .bee-col-1 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
+		.bee-row-9 .bee-col-2 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon-image,
+		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon-image,
+		.bee-row-7 .bee-col-3 .bee-block-1 .bee-icon-image,
+		.bee-row-7 .bee-col-4 .bee-block-1 .bee-icon-image {
+			padding: 0 15px
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-7 .bee-col-3 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-7 .bee-col-4 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-8 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-9 .bee-col-2 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-26 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-36 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-53 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-47 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-58 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
 		}
 
 		@media (max-width:768px) {
@@ -604,56 +728,75 @@
 				display: block
 			}
 
+			.bee-row-10 .bee-col-1 .bee-block-1,
+			.bee-row-10 .bee-col-1 .bee-block-2,
+			.bee-row-10 .bee-col-2 .bee-block-1,
+			.bee-row-2 .bee-col-1 .bee-block-6,
+			.bee-row-2 .bee-col-1 .bee-block-8,
+			.bee-row-2 .bee-col-2 .bee-block-7,
+			.bee-row-2 .bee-col-3 .bee-block-2,
+			.bee-row-26 .bee-col-2 .bee-block-3,
+			.bee-row-3 .bee-col-1 .bee-block-1,
+			.bee-row-32 .bee-col-1 .bee-block-1,
+			.bee-row-32 .bee-col-1 .bee-block-2,
+			.bee-row-32 .bee-col-2 .bee-block-1,
+			.bee-row-36 .bee-col-2 .bee-block-3,
+			.bee-row-43 .bee-col-1 .bee-block-1,
+			.bee-row-43 .bee-col-1 .bee-block-2,
+			.bee-row-43 .bee-col-2 .bee-block-1,
+			.bee-row-47 .bee-col-2 .bee-block-3,
+			.bee-row-49 .bee-col-1 .bee-block-1,
+			.bee-row-49 .bee-col-1 .bee-block-2,
+			.bee-row-49 .bee-col-2 .bee-block-1,
+			.bee-row-53 .bee-col-2 .bee-block-3,
+			.bee-row-55 .bee-col-1 .bee-block-1,
+			.bee-row-55 .bee-col-1 .bee-block-2,
+			.bee-row-55 .bee-col-2 .bee-block-1,
+			.bee-row-58 .bee-col-2 .bee-block-3,
+			.bee-row-61 .bee-col-1 .bee-block-1,
+			.bee-row-61 .bee-col-1 .bee-block-2,
+			.bee-row-61 .bee-col-2 .bee-block-1,
+			.bee-row-9 .bee-col-1 .bee-block-1,
+			.bee-row-9 .bee-col-2 .bee-block-1 {
+				height: 30px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-7,
+			.bee-row-2 .bee-col-2 .bee-block-6,
+			.bee-row-2 .bee-col-3 .bee-block-1 {
+				padding: 0 60px !important
+			}
+
 			.bee-row-2 .bee-col-1 .bee-block-7 img,
-			.bee-row-2 .bee-col-2 .bee-block-7 img,
-			.bee-row-33 .bee-col-2 .bee-block-1 img,
-			.bee-row-35 .bee-col-2 .bee-block-1 img,
-			.bee-row-55 .bee-col-1 .bee-block-1 img,
-			.bee-row-55 .bee-col-2 .bee-block-1 img,
-			.bee-row-55 .bee-col-3 .bee-block-1 img,
-			.bee-row-61 .bee-col-1 .bee-block-1 img,
-			.bee-row-61 .bee-col-2 .bee-block-1 img,
-			.bee-row-67 .bee-col-1 .bee-block-1 img,
-			.bee-row-67 .bee-col-2 .bee-block-1 img,
-			.bee-row-68 .bee-col-1 .bee-block-1 img,
-			.bee-row-68 .bee-col-2 .bee-block-1 img {
+			.bee-row-2 .bee-col-2 .bee-block-6 img,
+			.bee-row-2 .bee-col-3 .bee-block-1 img,
+			.bee-row-27 .bee-col-2 .bee-block-1 img,
+			.bee-row-29 .bee-col-2 .bee-block-1 img,
+			.bee-row-48 .bee-col-1 .bee-block-1 img,
+			.bee-row-48 .bee-col-2 .bee-block-1 img,
+			.bee-row-48 .bee-col-3 .bee-block-1 img,
+			.bee-row-54 .bee-col-1 .bee-block-1 img,
+			.bee-row-54 .bee-col-2 .bee-block-1 img,
+			.bee-row-59 .bee-col-1 .bee-block-1 img,
+			.bee-row-59 .bee-col-2 .bee-block-1 img,
+			.bee-row-60 .bee-col-1 .bee-block-1 img,
+			.bee-row-60 .bee-col-2 .bee-block-1 img,
+			.bee-row-8 .bee-col-1 .bee-block-2 img,
+			.bee-row-8 .bee-col-2 .bee-block-2 img,
+			.bee-row-9 .bee-col-1 .bee-block-3 img,
+			.bee-row-9 .bee-col-2 .bee-block-3 img {
 				float: none !important;
 				margin: 0 auto !important
 			}
 
-			.bee-row-10 .bee-col-2 .bee-block-2,
-			.bee-row-2 .bee-col-1 .bee-block-6,
-			.bee-row-2 .bee-col-1 .bee-block-8,
-			.bee-row-2 .bee-col-2 .bee-block-6,
-			.bee-row-3 .bee-col-1 .bee-block-1,
-			.bee-row-32 .bee-col-2 .bee-block-1,
-			.bee-row-32 .bee-col-2 .bee-block-3,
-			.bee-row-38 .bee-col-1 .bee-block-1,
-			.bee-row-38 .bee-col-2 .bee-block-1,
-			.bee-row-42 .bee-col-2 .bee-block-1,
-			.bee-row-42 .bee-col-2 .bee-block-3,
-			.bee-row-50 .bee-col-1 .bee-block-1,
-			.bee-row-50 .bee-col-2 .bee-block-1,
-			.bee-row-54 .bee-col-2 .bee-block-1,
-			.bee-row-54 .bee-col-2 .bee-block-3,
-			.bee-row-56 .bee-col-1 .bee-block-1,
-			.bee-row-56 .bee-col-2 .bee-block-1,
-			.bee-row-6 .bee-col-2 .bee-block-2,
-			.bee-row-60 .bee-col-2 .bee-block-1,
-			.bee-row-60 .bee-col-2 .bee-block-3,
-			.bee-row-62 .bee-col-1 .bee-block-1,
-			.bee-row-62 .bee-col-2 .bee-block-1,
-			.bee-row-66 .bee-col-2 .bee-block-1,
-			.bee-row-66 .bee-col-2 .bee-block-3,
-			.bee-row-69 .bee-col-1 .bee-block-1,
-			.bee-row-69 .bee-col-2 .bee-block-1,
-			.bee-row-7 .bee-col-1 .bee-block-1 {
-				height: 30px !important
-			}
-
 			.bee-row-2 .bee-col-1 .bee-block-2,
 			.bee-row-2 .bee-col-1 .bee-block-4 {
-				padding: 15px !important;
+				padding: 10px !important;
+				text-align: center !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 24px !important;
 				text-align: center !important
 			}
 
@@ -662,166 +805,149 @@
 				text-align: center !important
 			}
 
-			.bee-row-2 .bee-col-1 .bee-block-3 {
+			.bee-row-2 .bee-col-1 .bee-block-3,
+			.bee-row-6 .bee-col-2 .bee-block-1 {
 				height: 10px !important
 			}
 
-			.bee-row-12 .bee-col-1 .bee-block-1 h1,
-			.bee-row-12 .bee-col-2 .bee-block-1 h1,
-			.bee-row-13 .bee-col-1 .bee-block-1 h1,
-			.bee-row-13 .bee-col-2 .bee-block-1 h1,
-			.bee-row-14 .bee-col-1 .bee-block-2 h1,
-			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-				font-size: 24px !important;
-				text-align: center !important
+			.bee-row-26 .bee-col-1 .bee-block-1,
+			.bee-row-36 .bee-col-1 .bee-block-1,
+			.bee-row-47 .bee-col-1 .bee-block-1,
+			.bee-row-53 .bee-col-1 .bee-block-1,
+			.bee-row-58 .bee-col-1 .bee-block-1,
+			.bee-row-6 .bee-col-1 .bee-block-1 {
+				padding: 0 0 0 5px !important
 			}
 
-			.bee-row-2 .bee-col-2 .bee-block-7 {
-				padding: 0 !important
-			}
-
-			.bee-row-32 .bee-col-1 .bee-block-1,
-			.bee-row-32 .bee-col-1 .bee-block-2,
-			.bee-row-42 .bee-col-1 .bee-block-1,
-			.bee-row-42 .bee-col-1 .bee-block-2,
-			.bee-row-54 .bee-col-1 .bee-block-1,
-			.bee-row-54 .bee-col-1 .bee-block-2,
-			.bee-row-6 .bee-col-1 .bee-block-1,
-			.bee-row-6 .bee-col-1 .bee-block-2,
-			.bee-row-60 .bee-col-1 .bee-block-1,
-			.bee-row-60 .bee-col-1 .bee-block-2,
-			.bee-row-66 .bee-col-1 .bee-block-1,
-			.bee-row-66 .bee-col-1 .bee-block-2,
-			.bee-row-8 .bee-col-1 .bee-block-1,
-			.bee-row-8 .bee-col-2 .bee-block-1,
-			.bee-row-8 .bee-col-3 .bee-block-1,
-			.bee-row-8 .bee-col-4 .bee-block-1,
-			.bee-row-9 .bee-col-2 .bee-block-1 {
-				padding: 10px !important;
+			.bee-row-6 .bee-col-1 .bee-block-2 {
+				padding: 10px 10px 20px !important;
 				text-align: left !important
 			}
 
-			.bee-row-32 .bee-col-1 .bee-block-1 h1,
-			.bee-row-42 .bee-col-1 .bee-block-1 h1,
-			.bee-row-54 .bee-col-1 .bee-block-1 h1,
-			.bee-row-6 .bee-col-1 .bee-block-1 h1,
-			.bee-row-60 .bee-col-1 .bee-block-1 h1,
-			.bee-row-66 .bee-col-1 .bee-block-1 h1 {
-				font-size: 18px !important;
-				text-align: left !important
-			}
-
-			.bee-row-32 .bee-col-1 .bee-block-2 h1,
-			.bee-row-42 .bee-col-1 .bee-block-2 h1,
-			.bee-row-54 .bee-col-1 .bee-block-2 h1,
-			.bee-row-6 .bee-col-1 .bee-block-2 h1,
-			.bee-row-60 .bee-col-1 .bee-block-2 h1,
-			.bee-row-66 .bee-col-1 .bee-block-2 h1,
-			.bee-row-8 .bee-col-1 .bee-block-1 h1,
-			.bee-row-8 .bee-col-2 .bee-block-1 h1,
-			.bee-row-8 .bee-col-3 .bee-block-1 h1,
-			.bee-row-8 .bee-col-4 .bee-block-1 h1,
-			.bee-row-9 .bee-col-2 .bee-block-1 h1 {
+			.bee-row-26 .bee-col-1 .bee-block-2 h1,
+			.bee-row-36 .bee-col-1 .bee-block-2 h1,
+			.bee-row-47 .bee-col-1 .bee-block-2 h1,
+			.bee-row-53 .bee-col-1 .bee-block-2 h1,
+			.bee-row-58 .bee-col-1 .bee-block-2 h1,
+			.bee-row-6 .bee-col-1 .bee-block-2 h1 {
 				font-size: 36px !important;
 				text-align: left !important
 			}
 
-			.bee-row-12 .bee-col-1 .bee-block-1,
-			.bee-row-12 .bee-col-2 .bee-block-1,
-			.bee-row-13 .bee-col-1 .bee-block-1,
-			.bee-row-13 .bee-col-2 .bee-block-1,
-			.bee-row-14 .bee-col-1 .bee-block-2 {
-				padding: 10px !important;
-				text-align: center !important
+			.bee-row-8 .bee-col-1 .bee-block-1,
+			.bee-row-8 .bee-col-2 .bee-block-1 {
+				padding: 25px 5px 0 !important
 			}
 
-			.bee-row-14 .bee-col-1 .bee-block-1 {
-				height: 15px !important
+			.bee-row-8 .bee-col-1 .bee-block-1 .bee-icon-label,
+			.bee-row-8 .bee-col-2 .bee-block-1 .bee-icon-label,
+			.bee-row-9 .bee-col-1 .bee-block-2 .bee-icon-label,
+			.bee-row-9 .bee-col-2 .bee-block-2 .bee-icon-label {
+				font-size: 18px !important;
+				text-align: center
 			}
 
-			.bee-row-14 .bee-col-1 .bee-block-3 {
-				padding: 0 10px 20px !important
+			.bee-row-8 .bee-col-1 .bee-block-2,
+			.bee-row-8 .bee-col-2 .bee-block-2,
+			.bee-row-9 .bee-col-1 .bee-block-3,
+			.bee-row-9 .bee-col-2 .bee-block-3 {
+				padding: 0 15px 20px !important
 			}
 
-			.bee-row-14 .bee-col-1 .bee-block-3 .bee-separator {
-				margin: auto !important;
-				float: right !important
+			.bee-row-9 .bee-col-1 .bee-block-2,
+			.bee-row-9 .bee-col-2 .bee-block-2 {
+				padding: 0 5px !important
 			}
 
+			.bee-row-14 .bee-col-1 .bee-block-1,
 			.bee-row-17 .bee-col-1 .bee-block-1,
 			.bee-row-20 .bee-col-1 .bee-block-1,
-			.bee-row-23 .bee-col-1 .bee-block-1,
-			.bee-row-26 .bee-col-1 .bee-block-1,
-			.bee-row-29 .bee-col-1 .bee-block-1 {
+			.bee-row-23 .bee-col-1 .bee-block-1 {
 				height: 300px !important
 			}
 
-			.bee-row-36 .bee-col-1 .bee-block-2 h1,
-			.bee-row-37 .bee-col-2 .bee-block-2 h1,
-			.bee-row-46 .bee-col-1 .bee-block-2 h1,
-			.bee-row-46 .bee-col-2 .bee-block-2 h1,
-			.bee-row-47 .bee-col-1 .bee-block-2 h1,
-			.bee-row-47 .bee-col-2 .bee-block-2 h1,
-			.bee-row-48 .bee-col-1 .bee-block-2 h1,
-			.bee-row-48 .bee-col-2 .bee-block-2 h1,
-			.bee-row-49 .bee-col-1 .bee-block-2 h1,
-			.bee-row-49 .bee-col-2 .bee-block-2 h1 {
+			.bee-row-26 .bee-col-1 .bee-block-2,
+			.bee-row-36 .bee-col-1 .bee-block-2,
+			.bee-row-47 .bee-col-1 .bee-block-2,
+			.bee-row-53 .bee-col-1 .bee-block-2,
+			.bee-row-58 .bee-col-1 .bee-block-2 {
+				padding: 10px !important;
+				text-align: left !important
+			}
+
+			.bee-row-26 .bee-col-2 .bee-block-1,
+			.bee-row-36 .bee-col-2 .bee-block-1,
+			.bee-row-47 .bee-col-2 .bee-block-1,
+			.bee-row-53 .bee-col-2 .bee-block-1,
+			.bee-row-58 .bee-col-2 .bee-block-1 {
+				height: 20px !important
+			}
+
+			.bee-row-29 .bee-col-1 .bee-block-2 h1,
+			.bee-row-29 .bee-col-2 .bee-block-2 h1,
+			.bee-row-30 .bee-col-1 .bee-block-2 h1,
+			.bee-row-30 .bee-col-2 .bee-block-2 h1,
+			.bee-row-31 .bee-col-1 .bee-block-2 h1,
+			.bee-row-31 .bee-col-2 .bee-block-2 h1,
+			.bee-row-39 .bee-col-1 .bee-block-2 h1,
+			.bee-row-39 .bee-col-2 .bee-block-2 h1,
+			.bee-row-40 .bee-col-1 .bee-block-2 h1,
+			.bee-row-40 .bee-col-2 .bee-block-2 h1,
+			.bee-row-41 .bee-col-1 .bee-block-2 h1,
+			.bee-row-41 .bee-col-2 .bee-block-2 h1,
+			.bee-row-42 .bee-col-1 .bee-block-2 h1,
+			.bee-row-42 .bee-col-2 .bee-block-2 h1 {
 				font-size: 15px !important
 			}
 
-			.bee-row-36 .bee-col-2 .bee-block-2 h1 {
-				font-size: 14px !important
-			}
-
-			.bee-row-67 .bee-col-1 .bee-block-1,
-			.bee-row-67 .bee-col-2 .bee-block-1,
-			.bee-row-68 .bee-col-1 .bee-block-1,
-			.bee-row-68 .bee-col-2 .bee-block-1 {
+			.bee-row-59 .bee-col-1 .bee-block-1,
+			.bee-row-59 .bee-col-2 .bee-block-1,
+			.bee-row-60 .bee-col-1 .bee-block-1,
+			.bee-row-60 .bee-col-2 .bee-block-1 {
 				padding: 10px !important
 			}
 		}
-		.rm-class {
+        .rm-class {
             display: none;
         }
-    </style>
-        <script>
-        $(document).ready(function () {
-            // Handle global go back buttons
-            $(".global-goback").click(function () {
-                $(".rm-class").hide();
-                $("#rm-hero").show();
-                $(window).scrollTop(0);
-            });
-
-            // Handle new and used buttons
-            $("#jv-btn-new").click(function () {
-                $("#rm-hero, #rm-used-models").hide();
-				$("#rm-all-video").fadeTo("slow", 1).show();
-                $("#rm-select").fadeTo("slow", 1).show();
-                $(window).scrollTop(0);
-            });
-
-            $("#jv-btn-used").click(function () {
-                $("#rm-hero, #rm-select").hide();
-                $("#rm-used-models").fadeTo("slow", 1).show();
-                $(window).scrollTop(0);
-            });
-
-            // Handle vehicle brand buttons
-            $(".vehicle-btn").click(function () {
-                const brand = $(this).data("brand");
-
-                $("#rm-select").hide();
-                $(`#rm-${brand}-video, #rm-${brand}-models`).fadeTo("slow", 1).show();
-                $(window).scrollTop(0);
-            });
-        });
-    </script>
+	</style>
+            <script>
+                $(document).ready(function () {
+                    // Handle global go back buttons
+                    $(".global-goback").click(function () {
+                        $(".rm-class").hide();
+                        $("#rm-hero").show();
+                        $(window).scrollTop(0);
+                    });
+        
+                    // Handle new and used buttons
+                    $("#jv-btn-new").click(function () {
+                        $("#rm-hero, #rm-used-models").hide();
+                        $("#rm-all-video").fadeTo("slow", 1).show();
+                        $("#rm-select").fadeTo("slow", 1).show();
+                        $(window).scrollTop(0);
+                    });
+        
+                    $("#jv-btn-used").click(function () {
+                        $("#rm-hero, #rm-select").hide();
+                        $("#rm-used-models").fadeTo("slow", 1).show();
+                        $(window).scrollTop(0);
+                    });
+        
+                    // Handle vehicle brand buttons
+                    $(".vehicle-btn").click(function () {
+                        const brand = $(this).data("brand");
+        
+                        $("#rm-select").hide();
+                        $(`#rm-${brand}-video, #rm-${brand}-models`).fadeTo("slow", 1).show();
+                        $(window).scrollTop(0);
+                    });
+                });
+            </script>
 </head>
 
 <body>
-	<div class="bee-page-container">
-		
+</section>
 						<section id="rm-hero">
 						
 		<div class="bee-row bee-row-2">
@@ -829,18 +955,18 @@
 					<source src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Untitled%20%286%29.mp4" type="video/mp4" />
 				</video></div>
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-1 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#fff;direction:ltr;font-family:'Cabin', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">WELCOME TO REED HYUNDAI OF KANSAS CITY</span> </h1>
+						<h1 style="color:#fff;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:30px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">WELCOME TO REED HYUNDAI OF KANSAS CITY</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-4 bee-heading">
-						<h1 style="color:#fff;direction:ltr;font-family:'Cabin', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">LET'S FIND WHAT YOU'RE LOOKING FOR</span> </h1>
+						<h1 style="color:#fff;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:55px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">LET'S FIND WHAT YOU'RE LOOKING FOR</span> </h1>
 					</div>
 					<div class="bee-block bee-block-5 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:100px;"></div>
@@ -848,7 +974,7 @@
 					<div class="bee-block bee-block-6 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-7 bee-image" id="jv-btn-new"><img alt="" class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20NEW%20%28003%29.png" style="max-width:268px;" /></div>
+					<div class="bee-block bee-block-7 bee-image" id="jv-btn-new"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20NEW.png" style="max-width:301px;" /></div>
 					<div class="bee-block bee-block-8 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
@@ -856,7 +982,7 @@
 						<div class="spacer" style="height:100px;"></div>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
+				<div class="bee-col bee-col-2 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
@@ -872,14 +998,20 @@
 					<div class="bee-block bee-block-5 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:190px;"></div>
 					</div>
-					<div class="bee-block bee-block-6 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-6 bee-image" id="jv-btn-used"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20USED.png" style="max-width:301px;" /></div>
+					<div class="bee-block bee-block-7 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-7 bee-image" id="jv-btn-used"><img alt="" class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20USED%20%28003%29.png" style="max-width:268px;" /></div>
-					<div class="bee-block bee-block-8 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-8 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:100px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/value-trade/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20VALUE.png" style="max-width:301px;" /></a></div>
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-9 bee-spacer bee-mobile_hide">
+					<div class="bee-block bee-block-3 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:100px;"></div>
 					</div>
 				</div>
@@ -894,256 +1026,373 @@
 				</div>
 			</div>
 		</div>
-						</section>
-						<section class="rm-class" id="rm-all-video">
-						
-							<div class="bee-row bee-row-29 bee-mobile_hide">
-								<div class="bee-background-video-container">
-									<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/O2kto4hTKlE?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=O2kto4hTKlE&amp;loop=1"></iframe></div>
-								</div>
-								<div class="bee-row-content">
-									<div class="bee-col bee-col-1 bee-col-w12">
-										<div class="bee-block bee-block-1 bee-spacer">
-											<div class="spacer" style="height:600px;"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							</section>
+    </section>
 						<section class="rm-class" id="rm-select">
 						
 		<div class="bee-row bee-row-6">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">NEW HYUNDAI VEHICLES</span> </h1>
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/3caa4b80-d076-4577-a743-43c5efe8f4e1.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">NEW HYUNDAI VEHICLES</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Your Body Style</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Next, Select Bodystyle/Type</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
-    background-color: #6495ed;
-    color: white;
-    font-weight: 800;
-    font-size: 14px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-7">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-8 bee-mobile_hide">
+		<div class="bee-row bee-row-7 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Electrified</span> </h1>
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="64px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/1247c50b-15fe-4c45-acf5-4932e13eff42.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">SUVs</div>
+							</div>
+						</div>
 					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-ev" role="button" style="display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse Electric
-						</button>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">SUVs</span> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="suv" id="vehicle-suv" role="button" style="display: inline-block;
     outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse SUVs
+							Select SUVs
 						</button>
 					</div>
 				</div>
-				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Sedans</span> </h1>
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="64px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/ce79489e-8089-4d3d-af80-d9cf32e9d694.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Sedans</div>
+							</div>
+						</div>
 					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="sedan" id="vehicle-sedan" role="button" style="display: inline-block;
     outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse SUVs
+							Select Sedans
+						</button>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="64px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/2b0b9ac9-6299-4c7c-b01e-e3490cf6fe5d.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">EV/Electric</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
+					<div class="bee-block bee-block-3 bee-html-block">
+						<!-- HTML !-->
+						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-ev" role="button" style="display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 60px;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #053361;                                             
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
+							Select EV
 						</button>
 					</div>
 				</div>
 				<div class="bee-col bee-col-4 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Performance</span> </h1>
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="64px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/fc403d56-bbc7-436f-b57f-38fc1b74a1f3.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Performance</div>
+							</div>
+						</div>
 					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="performance" id="vehicle-performance" role="button" style="display: inline-block;
     outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 45px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 17px;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse Performance
+							Select Performance
 						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-9 bee-mobile_hide">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
+		<div class="bee-row bee-row-8 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/315709d8-4075-4517-b48b-fde09f3af59c.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">SUVs</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:475px;" /></div>
+					<div class="bee-block bee-block-3 bee-html-block">
+						<!-- HTML !-->
+						<button class="button-jv vehicle-btn" data-brand="suv" id="vehicle-suv" role="button" style="display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #053361;                                             
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
+							Select SUVs
+						</button>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/2757aab8-2268-43c9-a112-e17199879807.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Sedans</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:475px;" /></div>
+					<div class="bee-block bee-block-3 bee-html-block">
+						<!-- HTML !-->
+						<button class="button-jv vehicle-btn" data-brand="sedan" id="vehicle-sedan" role="button" style="display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #053361;                                             
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
+							Select Sedans
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-9 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">View All Vehicles</span> </h1>
+					<div class="bee-block bee-block-2 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/d11d282c-75b4-445f-936a-b00db8f09f32.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">EV/Electric</div>
+							</div>
+						</div>
 					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
+					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:475px;" /></div>
+					<div class="bee-block bee-block-4 bee-html-block">
+						<!-- HTML !-->
+						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-ev" role="button" style="display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #053361;                                             
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
+							Select EVs
+						</button>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/62f47e32-6205-4142-8192-63db07efc296.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">Performance</div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:475px;" /></div>
+					<div class="bee-block bee-block-4 bee-html-block">
+						<!-- HTML !-->
+						<button class="button-jv vehicle-btn" data-brand="performance" id="vehicle-performance" role="button" style="display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #053361;                                             
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
+							Select Performance
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-10">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/new-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    line-height: 30px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse All New Vehicles
-						</button>
+									Shop All Hyundai
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="bee-col bee-col-3 bee-col-w4">
+				<div class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-10 bee-mobile_hide">
-			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block">
+					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-11 bee-mobile_hide">
+		<div class="bee-row bee-row-11">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-spacer">
@@ -1152,190 +1401,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-12 bee-desktop_hide">
-			<div class="bee-row-content no_stack">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Electrified</span> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-evm" role="button" style="display: inline-block;
-outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 12px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse EV
-						</button>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">SUVs</span> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="suv" id="vehicle-suvm" role="button" style="display: inline-block;
-outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 12px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse SUVs
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-13 bee-desktop_hide">
-			<div class="bee-row-content no_stack">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Sedans</span> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="sedan" id="vehicle-sedanm" role="button" style="display: inline-block;
-outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 35px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 12px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse Sedans
-						</button>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Performance</span> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="performance" id="vehicle-performancem" role="button" style="display: inline-block;
-outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 10px;
-    height: 35px;
-    line-height: 35px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 12px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Browse Performance
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-14 bee-desktop_hide">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:38px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">View All New Vehicles</span> </h1>
-					</div>
-					<div class="bee-block bee-block-3 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:50%;"></div>
-					</div>
-					<div class="bee-block bee-block-4 bee-html-block">
-						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 36px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 12px;
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Browse All New Vehicles
-							</button>
-						</a>
-					</div>
-					<div class="bee-block bee-block-5 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block">
-						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
-    background-color: #6495ed;
-    color: white;
-    font-weight: 800;
-    font-size: 14px;
-    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
-    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-						</section>
-		
-						<section class="rm-class" id="rm-ev-video" data-brand="ev"> 
+    </section>
+						<section class="rm-class" id="rm-ev-video">
 						
-		<div class="bee-row bee-row-17 bee-mobile_hide">
+		<div class="bee-row bee-row-14 bee-mobile_hide">
 			<div class="bee-background-video-container">
 				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/3O8NiEx3a_k?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=3O8NiEx3a_k&amp;loop=1"></iframe></div>
 			</div>
@@ -1347,10 +1416,10 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-						</section>
+    </section>
 						<section class="rm-class" id="rm-suv-video">
 						
-		<div class="bee-row bee-row-20 bee-mobile_hide">
+		<div class="bee-row bee-row-17 bee-mobile_hide">
 			<div class="bee-background-video-container">
 				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/4YYBVF6QD_o?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=4YYBVF6QD_o&amp;loop=1"></iframe></div>
 			</div>
@@ -1362,11 +1431,10 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-						</section>
-		
+    </section>
 						<section class="rm-class" id="rm-sedan-video">
 						
-		<div class="bee-row bee-row-23 bee-mobile_hide">
+		<div class="bee-row bee-row-20 bee-mobile_hide">
 			<div class="bee-background-video-container">
 				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/t3e89bwM0wE?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=t3e89bwM0wE&amp;loop=1"></iframe></div>
 			</div>
@@ -1378,12 +1446,10 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		</section>
-
-		
+    </section>
 						<section class="rm-class" id="rm-performance-video">
 						
-		<div class="bee-row bee-row-26 bee-mobile_hide">
+		<div class="bee-row bee-row-23 bee-mobile_hide">
 			<div class="bee-background-video-container">
 				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/aLdlmDQ0URw?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=aLdlmDQ0URw&amp;loop=1"></iframe></div>
 			</div>
@@ -1395,44 +1461,50 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		</section>
-		
-						
-		
+    </section>
 						<section class="rm-class" id="rm-ev-models">
 						
-		<div class="bee-row bee-row-32">
+		<div class="bee-row bee-row-26">
 			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">NEW ELECTRIFIED VEHICLES</span> </h1>
+				<div class="bee-col bee-col-1 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">NEW HYUNDAI EVs</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Now Select a Model to Shop</span> </h1>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
@@ -1440,7 +1512,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-33 bee-mobile_hide">
+		<div class="bee-row bee-row-27 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-ioniq-5-limited-awd-cyber-gray-013_Browse.webp" style="max-width:247px;" /></a></div>
@@ -1454,20 +1526,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1484,20 +1558,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-6/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1514,20 +1590,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1544,27 +1622,29 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/sonata-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-34 bee-mobile_hide">
+		<div class="bee-row bee-row-28 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/elantra-hybrid/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-elantra-hev-ltd-ceramic-white-013_Browse.webp" style="max-width:257px;" /></a></div>
@@ -1578,20 +1658,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/elantra-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1608,20 +1690,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/tucson-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1638,29 +1722,30 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-35 bee-desktop_hide">
+		<div class="bee-row bee-row-29 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-ioniq-5-limited-awd-cyber-gray-013_Browse.webp" style="max-width:545px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Ioniq 5</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">iONIQ 5</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1670,24 +1755,25 @@ outline: 0;
 				<div class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-6" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-ioniq-6-limited-rwd-transmission-blue-pearl-013_Browse.webp" style="max-width:545px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Ioniq 6</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">iONIQ 6</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-6">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1696,7 +1782,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-36 bee-desktop_hide">
+		<div class="bee-row bee-row-30 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe-hybrid/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-santa-fe-hybrid-limited-awd-portofino-gray-013_Browse_1.webp" style="max-width:545px;" /></a></div>
@@ -1707,18 +1793,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1734,18 +1821,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/sonata-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1754,7 +1842,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-37 bee-desktop_hide">
+		<div class="bee-row bee-row-31 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/elantra-hybrid/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-elantra-hev-ltd-ceramic-white-013_Browse.webp" style="max-width:555px;" /></a></div>
@@ -1765,18 +1853,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/elantra-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1792,18 +1881,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/tucson-hybrid/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -1812,32 +1902,41 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-38">
+		<div class="bee-row bee-row-32">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/new-vehicles/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/new-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 40px;
-    height: 40px;
+    padding: 0 60px;
+    height: 45px;
     line-height: 30px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Shop All Vehicles
-							</button>
-						</a>
+									Shop All Vehicles
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
@@ -1846,71 +1945,83 @@ outline: 0;
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-						</section>
-		
-						<section class="rm-class" id="rm-suv-models">
-						
-		<div class="bee-row bee-row-41">
+		<div class="bee-row bee-row-33">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-42">
+    </section>
+						<section class="rm-class" id="rm-suv-models">
+						
+		<div class="bee-row bee-row-36">
 			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">NEW SUV MODELS</span> </h1>
+				<div class="bee-col bee-col-1 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">NEW HYUNDAI SUVs</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Now Select a Model to Shop</span> </h1>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
@@ -1918,7 +2029,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-43 bee-mobile_hide">
+		<div class="bee-row bee-row-37 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/venue/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-venue-limited-intense-blue-013-nav_Browse.webp" style="max-width:287px;" /></a></div>
@@ -1929,20 +2040,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/venue/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1956,20 +2069,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/tucson/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -1983,20 +2098,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -2010,36 +2127,29 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/kona/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-44">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-45 bee-mobile_hide">
+		<div class="bee-row bee-row-38 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/kona-n/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-kona-n-fwd-sonic-blue-a-013_Browse.webp" style="max-width:287px;" /></a></div>
@@ -2050,20 +2160,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/kona-n/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -2077,20 +2189,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-cruz/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -2104,20 +2218,22 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/palisade/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
@@ -2131,27 +2247,29 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    padding: 0 60px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Explore Now
+								Shop Now
 							</button>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-46 bee-desktop_hide">
+		<div class="bee-row bee-row-39 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/venue/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-venue-limited-intense-blue-013-nav_Browse.webp" style="max-width:555px;" /></a></div>
@@ -2162,18 +2280,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/venue/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2189,18 +2308,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/tucson/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2209,7 +2329,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-47 bee-desktop_hide">
+		<div class="bee-row bee-row-40 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-santa-fe-phev-limited-awd-shimmering-silver-013-nav_Browse.webp" style="max-width:555px;" /></a></div>
@@ -2220,18 +2340,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-fe/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2247,18 +2368,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/kona/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2267,7 +2389,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-48 bee-desktop_hide">
+		<div class="bee-row bee-row-41 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/kona-n/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-kona-n-fwd-sonic-blue-a-013_Browse.webp" style="max-width:555px;" /></a></div>
@@ -2278,18 +2400,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/kona-n/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2305,18 +2428,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/santa-cruz/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2325,7 +2449,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-49 bee-desktop_hide">
+		<div class="bee-row bee-row-42 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/palisade/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-palisade-limited-fwd-moonlight-cloud-013-1_Browse.webp" style="max-width:555px;" /></a></div>
@@ -2336,18 +2460,19 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/palisade/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2357,24 +2482,25 @@ outline: 0;
 				<div class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-ioniq-5-limited-awd-cyber-gray-013_Browse_1.webp" style="max-width:555px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Ioniq 5</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">iONIQ 5</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/ioniq-5">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+  outline: 0;
     cursor: pointer;
     border: none;
     padding: 0 30px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
+    background-color: #053361;
+    color: #fff;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 12px;
+	letter-spacing: 0.02em;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2383,32 +2509,41 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-50">
+		<div class="bee-row bee-row-43">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/new-vehicles/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/new-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 40px;
-    height: 40px;
+    padding: 0 60px;
+    height: 45px;
     line-height: 30px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Shop All Vehicles
-							</button>
-						</a>
+									Shop All Vehicles
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
@@ -2417,71 +2552,83 @@ outline: 0;
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-						</section>
-		
-						<section class="rm-class" id="rm-sedan-models">
-						
-		<div class="bee-row bee-row-53">
+		<div class="bee-row bee-row-44">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-54">
+    </section>
+						<section class="rm-class" id="rm-sedan-models">
+						
+		<div class="bee-row bee-row-47">
 			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">NEW SEDAN MODELS</span> </h1>
+				<div class="bee-col bee-col-1 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">NEW HYUNDAI SEDANs</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Now Select a Model to Shop</span> </h1>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
@@ -2489,7 +2636,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-55">
+		<div class="bee-row bee-row-48">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/elantra-2/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2023-elantra-ltd-portofino-gray-013_Browse.webp" style="max-width:386px;" /></a></div>
@@ -2500,18 +2647,20 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/elantra-2/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2527,18 +2676,20 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/sonata-2/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2554,18 +2705,20 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/elantra-n/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2574,32 +2727,41 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-56">
+		<div class="bee-row bee-row-49">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/new-vehicles/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/new-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 40px;
-    height: 40px;
+    padding: 0 60px;
+    height: 45px;
     line-height: 30px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Shop All Vehicles
-							</button>
-						</a>
+									Shop All Vehicles
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
@@ -2608,70 +2770,83 @@ outline: 0;
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-						</section>
-						<section class="rm-class" id="rm-performance-models">
-						
-		<div class="bee-row bee-row-59">
+		<div class="bee-row bee-row-50">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-60">
+    </section>
+						<section class="rm-class" id="rm-performance-models">
+						
+		<div class="bee-row bee-row-53">
 			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">NEW PERFORMANCE MODELS</span> </h1>
+				<div class="bee-col bee-col-1 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">NEW HYUNDAI PERFORMANCE</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Now Select a Model to Shop</span> </h1>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
@@ -2679,7 +2854,7 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-61">
+		<div class="bee-row bee-row-54">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/new-vehicles/elantra-n/" target="_blank"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Hyundai%20POWA/2022-elantra-n-fwd-performance-blue-a-013_Browse.webp" style="max-width:585px;" /></a></div>
@@ -2690,18 +2865,20 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/elantra-n/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2717,18 +2894,20 @@ outline: 0;
 						<!-- HTML !-->
 						<a href="https://www.reedhyundaikc.com/new-vehicles/kona-n/">
 							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 30px;
+    padding: 0 60px;
     height: 30px;
-    line-height: 20px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
+    background-color: #053361;
+    color: #fff;
+    font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 								Shop Now
 							</button>
@@ -2737,32 +2916,41 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-62">
+		<div class="bee-row bee-row-55">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/new-vehicles/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/new-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 40px;
-    height: 40px;
+    padding: 0 60px;
+    height: 45px;
     line-height: 30px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Shop All Vehicles
-							</button>
-						</a>
+									Shop All Vehicles
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
@@ -2771,30 +2959,31 @@ outline: 0;
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-						</section>
-						<section class="rm-class" id="rm-used-models">
-						
-		<div class="bee-row bee-row-65">
+        <div class="bee-row bee-row-62">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-spacer">
@@ -2803,38 +2992,50 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-66">
+    </section>
+						<section class="rm-class" id="rm-used-models">
+						
+		<div class="bee-row bee-row-58">
 			<div class="bee-row-content reverse">
-				<div class="bee-col bee-col-1 bee-col-w10">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#6495ed;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">USED VEHICLES</span> </h1>
+				<div class="bee-col bee-col-1 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
+								<div class="bee-icon-label bee-icon-label-right">USED VEHICLES</div>
+							</div>
+						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
 						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Body Style to Shop</span> </h1>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-spacer">
+				<div class="bee-col bee-col-2 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
@@ -2842,52 +3043,61 @@ outline: 0;
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-67">
+		<div class="bee-row bee-row-59">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=SUVs&amp;_dFR%5Bbody%5D%5B1%5D=Vans&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_blank"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20SUVS.png" style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=SUVs&amp;_dFR%5Bbody%5D%5B1%5D=Vans&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20SUVS.png" style="max-width:300px;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Trucks&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_blank"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20TRUCKS%20%28002%29_1.png" style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Trucks&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20TRUCKS%20%28002%29_1.png" style="max-width:300px;" /></a></div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-68">
+		<div class="bee-row bee-row-60">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Cars&amp;_dFR%5Bbody%5D%5B1%5D=Convertible&amp;_dFR%5Bbody%5D%5B2%5D=Coupe&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_blank"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20CARS%20%28002%29.png" style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Cars&amp;_dFR%5Bbody%5D%5B1%5D=Convertible&amp;_dFR%5Bbody%5D%5B2%5D=Coupe&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20CARS%20%28002%29.png" style="max-width:300px;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_nR%5Bour_price%5D%5B%3C=%5D%5B0%5D=25492&amp;_paymentType=our_price" target="_blank"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%2025%20%28002%29.png" style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedhyundaikc.com/used-vehicles/?_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_nR%5Bour_price%5D%5B%3C=%5D%5B0%5D=25492&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%2025%20%28002%29.png" style="max-width:300px;" /></a></div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-69">
+		<div class="bee-row bee-row-61">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
+					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<a href="https://www.reedhyundaikc.com/used-vehicles/">
-							<button class="button-jv" role="button" style="display: inline-block;
-    outline: 0;
+						<div class="rm-container" style="text-align: center !important;">
+							<a href="https://www.reedhyundaikc.com/used-vehicles/">
+								<button class="button-jv" role="button" style="display: inline-block;
+outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 40px;
-    height: 40px;
+    padding: 0 60px;
+    height: 45px;
     line-height: 30px;
-    border-radius: 50px;
-    border: 0.1rem solid #053361;                                             
-    background-color: transparent;
-    color: #053361;
-    font-weight: 800;
-    font-size: 18px;
+    border-radius: 7.5px;
+    border: 0.1rem solid #17a8e3;                                             
+    background-color: #17a8e3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-								Shop All Used Vehicles
-							</button>
-						</a>
+									Shop All Used Vehicles
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
@@ -2896,43 +3106,40 @@ outline: 0;
 					</div>
 					<div class="bee-block bee-block-2 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn global-goback" role="button" style="display: inline-block;
+						<div class="rm-container" style="text-align: end !important">
+							<button class="button-jv global-goback vehicle-btn" role="button" style="display: inline-block;
     outline: 0;
+	margin-left: 10px;
+	margin-right: 10px;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
+    padding: 0 60px;
     height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
+    line-height: 30px;
+    border-radius: 7.5px;
     background-color: #6495ed;
     color: white;
     font-weight: 800;
     font-size: 14px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
-							Go Back
-						</button>
+								<span class="chevron" style="margin-right: 10px;">◀</span> Go Back
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-70">
+		<div class="bee-row bee-row-62">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer bee-desktop_hide">
+					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-71">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-html-block">
-					</div>
-				</div>
-			</div>
-		</div>
+    </section>
 	</div>
 </body>
 

@@ -7,15 +7,15 @@
 	<meta content="website" property="og:type" />
 	<meta content="" property="og:description" />
 	<meta content="https://y0dfsvo4j6.preview-postedstuff.com/V2-Z8gf5-vhiz-bc6e-C2Wi/" property="og:url" />
-	<meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/937703/922138/1878061/9441364_large.jpg"
-		property="og:image" />
+	<meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/937703/922138/1878061/9441364_large.jpg" property="og:image" />
 	<meta content="" property="og:title" />
 	<meta content="" name="description" />
 	<meta charset="utf-8" />
 	<meta content="width=device-width" name="viewport" />
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 	<style>
 		.bee-row,
 		.bee-row-content {
@@ -629,6 +629,22 @@
 				display: block
 			}
 
+			.bee-row-2 .bee-col-1 .bee-block-3,
+			.bee-row-6 .bee-col-2 .bee-block-1 {
+				height: 10px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2,
+			.bee-row-2 .bee-col-1 .bee-block-4 {
+				padding: 10px !important;
+				text-align: center !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 24px !important;
+				text-align: center !important
+			}
+
 			.bee-row-11 .bee-col-1 .bee-block-1,
 			.bee-row-11 .bee-col-1 .bee-block-2,
 			.bee-row-11 .bee-col-2 .bee-block-1,
@@ -662,27 +678,6 @@
 				height: 30px !important
 			}
 
-			.bee-row-2 .bee-col-1 .bee-block-2,
-			.bee-row-2 .bee-col-1 .bee-block-4 {
-				padding: 10px !important;
-				text-align: center !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-4 h1 {
-				font-size: 28px !important;
-				text-align: center !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-3,
-			.bee-row-6 .bee-col-2 .bee-block-1 {
-				height: 10px !important
-			}
-
-			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
-				font-size: 24px !important;
-				text-align: center !important
-			}
-
 			.bee-row-2 .bee-col-1 .bee-block-7,
 			.bee-row-2 .bee-col-2 .bee-block-6,
 			.bee-row-2 .bee-col-3 .bee-block-1 {
@@ -698,6 +693,11 @@
 			.bee-row-58 .bee-col-2 .bee-block-1 img {
 				float: none !important;
 				margin: 0 auto !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-4 h1 {
+				font-size: 28px !important;
+				text-align: center !important
 			}
 
 			.bee-row-27 .bee-col-1 .bee-block-1,
@@ -786,57 +786,56 @@
 				padding: 10px !important
 			}
 		}
-
 		.rm-class {
 			display: none;
 		}
 	</style>
-	<script>
-		$(document).ready(function () {
-			// Handle global go back buttons
-			$(".global-goback").click(function () {
-				$(".rm-class").hide();
-				$("#rm-hero").show();
-				$(window).scrollTop(0);
-			});
-
-			// Handle new and used buttons
-			$("#jv-btn-new").click(function () {
-				$("#rm-hero, #rm-used-models").hide();
-				$("#rm-all-video").fadeTo("slow", 1).show();
-				$("#rm-select").fadeTo("slow", 1).show();
-				$(window).scrollTop(0);
-			});
-
-			$("#jv-btn-used").click(function () {
-				$("#rm-hero, #rm-select").hide();
-				$("#rm-used-models").fadeTo("slow", 1).show();
-				$(window).scrollTop(0);
-			});
-
-			// Handle vehicle brand buttons
-			$(".vehicle-btn").click(function () {
-				const brand = $(this).data("brand");
-
-				$("#rm-select").hide();
-				$(`#rm-${brand}-video, #rm-${brand}-models`).fadeTo("slow", 1).show();
-				$(window).scrollTop(0);
-			});
-		});
-	</script>
+		        <script>
+					$(document).ready(function () {
+						// Handle global go back buttons
+						$(".global-goback").click(function () {
+							$(".rm-class").hide();
+							$("#rm-hero").show();
+							$(window).scrollTop(0);
+						});
+			
+						// Handle new and used buttons
+						$("#jv-btn-new").click(function () {
+							$("#rm-hero, #rm-used-models").hide();
+							$("#rm-all-video").fadeTo("slow", 1).show();
+							$("#rm-select").fadeTo("slow", 1).show();
+							$(window).scrollTop(0);
+						});
+			
+						$("#jv-btn-used").click(function () {
+							$("#rm-hero, #rm-select").hide();
+							$("#rm-used-models").fadeTo("slow", 1).show();
+							$(window).scrollTop(0);
+						});
+			
+						// Handle vehicle brand buttons
+						$(".vehicle-btn").click(function () {
+							const brand = $(this).data("brand");
+			
+							$("#rm-select").hide();
+							$(`#rm-${brand}-video, #rm-${brand}-models`).fadeTo("slow", 1).show();
+							$(window).scrollTop(0);
+						});
+					});
+				</script>
 </head>
 
 <body>
-
-	<section id="rm-hero">
-
+						<section id="rm-hero">
+						
+					
 		<div class="bee-row bee-row-2">
 			<div class="bee-background-video-container"><video autoplay="autoPlay" loop="loop" muted="muted" playsinline="playsInline">
 					<source src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/Untitled%20%288%29.mp4" type="video/mp4" />
 				</video></div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-spacer">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
@@ -887,7 +886,7 @@
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/tradeinform/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20SELL.png" style="max-width:301px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/tradeinform/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20VALUE.png" style="max-width:301px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-spacer bee-desktop_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
@@ -907,25 +906,21 @@
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-select">
-
+						<section class="rm-class" id="rm-select">
+						
 		<div class="bee-row bee-row-6">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w10">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">NEW CHEVROLET VEHICLES</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Select Body Style/Type</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Body Style/Type</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w2">
@@ -939,13 +934,9 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trucks</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trucks</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:177px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="truck" id="vehicle-truck" role="button" style="display: inline-block;
@@ -970,13 +961,9 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Crossovers/SUVs</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Crossovers/SUVs</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:177px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="suv" id="vehicle-suv" role="button" style="display: inline-block;
@@ -1001,13 +988,9 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Cars</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Cars</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:177px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="car" id="vehicle-car" role="button" style="display: inline-block;
@@ -1032,13 +1015,9 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 				</div>
 				<div class="bee-col bee-col-4 bee-col-w3">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Electric</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Electric</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:177px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:177px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-ev" role="button" style="display: inline-block;
@@ -1067,17 +1046,12 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trucks</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trucks</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:555px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:555px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="truck" id="vehicle-truckm" role="button"
-							style="display: inline-block;
+						<button class="button-jv vehicle-btn" data-brand="truck" id="vehicle-truckm" role="button" style="display: inline-block;
     outline: 0;
     cursor: pointer;
     border: none;
@@ -1099,13 +1073,9 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">SUVs</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">SUVs</span> </h1>
 					</div>
-					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:555px;" /></div>
+					<div class="bee-block bee-block-2 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:555px;" /></div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="suv" id="vehicle-suvm" role="button" style="display: inline-block;
@@ -1137,13 +1107,9 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Cars</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Cars</span> </h1>
 					</div>
-					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:555px;" /></div>
+					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:555px;" /></div>
 					<div class="bee-block bee-block-4 bee-html-block">
 						<!-- HTML !-->
 						<button class="button-jv vehicle-btn" data-brand="car" id="vehicle-car" role="button" style="display: inline-block;
@@ -1171,16 +1137,12 @@ transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">EV/Electric</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:32px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">EV/Electric</span> </h1>
 					</div>
-					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth"
-							src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png"
-							style="max-width:555px;" /></div>
+					<div class="bee-block bee-block-3 bee-image"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/editor_images/c61f3213-58ef-4954-9431-830376c7e429.png" style="max-width:555px;" /></div>
 					<div class="bee-block bee-block-4 bee-html-block">
 						<!-- HTML !-->
-						<button class="button-jv vehicle-btn" data-brand="car" id="vehicle-car" role="button" style="display: inline-block;
+						<button class="button-jv vehicle-btn" data-brand="ev" id="vehicle-ev" role="button" style="display: inline-block;
     outline: 0;
     cursor: pointer;
     border: none;
@@ -1288,14 +1250,11 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-truck-video">
-
+						<section class="rm-class" id="rm-truck-video">
+						
 		<div class="bee-row bee-row-15 bee-mobile_hide">
 			<div class="bee-background-video-container">
-				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen"
-						frameborder="0"
-						src="https://www.youtube.com/embed/UbX0MiVvams?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=UbX0MiVvams&amp;loop=1"></iframe>
-				</div>
+				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/UbX0MiVvams?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=UbX0MiVvams&amp;loop=1"></iframe></div>
 			</div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
@@ -1306,14 +1265,11 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-suv-video">
-
+						<section class="rm-class" id="rm-suv-video">
+						
 		<div class="bee-row bee-row-18 bee-mobile_hide">
 			<div class="bee-background-video-container">
-				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen"
-						frameborder="0"
-						src="https://www.youtube.com/embed/fw4PeJoIih8?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=fw4PeJoIih8&amp;loop=1"></iframe>
-				</div>
+				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/fw4PeJoIih8?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=fw4PeJoIih8&amp;loop=1"></iframe></div>
 			</div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
@@ -1324,14 +1280,11 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-car-video">
-
+						<section class="rm-class" id="rm-car-video">
+						
 		<div class="bee-row bee-row-21 bee-mobile_hide">
 			<div class="bee-background-video-container">
-				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen"
-						frameborder="0"
-						src="https://www.youtube.com/embed/1B1dvd4GMi0?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=1B1dvd4GMi0&amp;loop=1"></iframe>
-				</div>
+				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/1B1dvd4GMi0?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=1B1dvd4GMi0&amp;loop=1"></iframe></div>
 			</div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
@@ -1342,14 +1295,11 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-ev-video">
-
+						<section class="rm-class" id="rm-ev-video">
+						
 		<div class="bee-row bee-row-24 bee-mobile_hide">
 			<div class="bee-background-video-container">
-				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen"
-						frameborder="0"
-						src="https://www.youtube.com/embed/NaKrYUarKe4?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=NaKrYUarKe4&amp;loop=1"></iframe>
-				</div>
+				<div class="bee-iframe-video-container"><iframe allow="fullscreen" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/NaKrYUarKe4?controls=0&amp;autoplay=1&amp;mute=1&amp;playlist=NaKrYUarKe4&amp;loop=1"></iframe></div>
 			</div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
@@ -1360,25 +1310,21 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-truck-models">
-
+						<section class="rm-class" id="rm-truck-models">
+						
 		<div class="bee-row bee-row-27">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">NEW CHEVROLET TRUCKS</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
@@ -1414,15 +1360,9 @@ outline: 0;
 		<div class="bee-row bee-row-28">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/colorado/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-colorado-4zr-glt-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/colorado/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-colorado-4zr-glt-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Colorado</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Colorado</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -1449,15 +1389,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/silverado-1500/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-silverado1500-2lt-g7c-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/silverado-1500/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-silverado1500-2lt-g7c-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Silverado 1500</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Silverado 1500</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -1484,15 +1418,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/silverado-hd/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-silverado-2500-3lz-gba-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/silverado-hd/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-silverado-2500-3lz-gba-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Silverado HDs</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Silverado HDs</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -1597,25 +1525,21 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-suv-models">
-
+						<section class="rm-class" id="rm-suv-models">
+						
 		<div class="bee-row bee-row-33">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">NEW CHEVROLET SUVs</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
@@ -1651,15 +1575,9 @@ outline: 0;
 		<div class="bee-row bee-row-34 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/trax/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-trax-1sa-gvr-driver-front-3quarter-nav.webp"
-								style="max-width:257px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/trax/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-trax-1sa-gvr-driver-front-3quarter-nav.webp" style="max-width:257px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trax</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trax</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
@@ -1689,15 +1607,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/equinox/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-equinox-1lz-gxd-driver-front-3quarter-nav.webp"
-								style="max-width:247px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/equinox/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-equinox-1lz-gxd-driver-front-3quarter-nav.webp" style="max-width:247px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Equinox</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Equinox</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
@@ -1727,15 +1639,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/blazer/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-blazer-1rs-gnt-driver-front-3quarter-nav.webp"
-								style="max-width:247px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/blazer/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-blazer-1rs-gnt-driver-front-3quarter-nav.webp" style="max-width:247px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Blazer</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Blazer</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
@@ -1765,15 +1671,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-4 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/traverse/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-traverse-1lz-g1w-driver-front-3quarter-nav%20%281%29.webp"
-								style="max-width:247px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/traverse/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-traverse-1lz-g1w-driver-front-3quarter-nav%20%281%29.webp" style="max-width:247px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Traverse</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Traverse</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
@@ -1807,21 +1707,14 @@ outline: 0;
 		<div class="bee-row bee-row-35 bee-mobile_hide">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/suburban/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-suburban-3lz-g1w-driver-front-3quarter-nav.webp"
-								style="max-width:257px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/suburban/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-suburban-3lz-g1w-driver-front-3quarter-nav.webp" style="max-width:257px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Suburban</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Suburban</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-html-block"><a
-							href="https://www.reedchevystj.com/new-vehicles/equinox/">
+					<div class="bee-block bee-block-4 bee-html-block"><a href="https://www.reedchevystj.com/new-vehicles/equinox/">
 							<button class="button-jv" role="button" style="display: inline-block;
 outline: 0;
     cursor: pointer;
@@ -1843,21 +1736,14 @@ outline: 0;
 						</a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/tahoe/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-tahoe-1sp-gnt-driver-front-3quarter-nav.webp"
-								style="max-width:247px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/tahoe/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-tahoe-1sp-gnt-driver-front-3quarter-nav.webp" style="max-width:247px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Tahoe</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Tahoe</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-html-block"><a
-							href="https://www.reedchevystj.com/new-vehicles/tahoe/">
+					<div class="bee-block bee-block-4 bee-html-block"><a href="https://www.reedchevystj.com/new-vehicles/tahoe/">
 							<button class="button-jv" role="button" style="display: inline-block;
 outline: 0;
     cursor: pointer;
@@ -1879,21 +1765,14 @@ outline: 0;
 						</a></div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/trailblazer/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-trailblazer-1sa-ghs-driver-front-3quarter-nav.webp"
-								style="max-width:247px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/trailblazer/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-trailblazer-1sa-ghs-driver-front-3quarter-nav.webp" style="max-width:247px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trailblazer</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trailblazer</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-spacer">
 						<div class="spacer" style="height:10px;"></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-html-block"><a
-							href="https://www.reedchevystj.com/new-vehicles/silverado/">
+					<div class="bee-block bee-block-4 bee-html-block"><a href="https://www.reedchevystj.com/new-vehicles/silverado/">
 							<button class="button-jv" role="button" style="display: inline-block;
 outline: 0;
     cursor: pointer;
@@ -1924,15 +1803,9 @@ outline: 0;
 		<div class="bee-row bee-row-36 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/trax/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-trax-1sa-gvr-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/trax/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2024-trax-1sa-gvr-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trax</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trax</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -1958,15 +1831,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/equinox/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-equinox-1lz-gxd-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/equinox/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-equinox-1lz-gxd-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Equinox</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Equinox</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -1996,15 +1863,9 @@ outline: 0;
 		<div class="bee-row bee-row-37 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/blazer/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-blazer-1rs-gnt-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/blazer/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-blazer-1rs-gnt-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Blazer</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Blazer</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2030,15 +1891,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/traverse/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-traverse-1lz-g1w-driver-front-3quarter-nav%20%281%29.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/traverse/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-traverse-1lz-g1w-driver-front-3quarter-nav%20%281%29.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Traverse</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Traverse</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2068,15 +1923,9 @@ outline: 0;
 		<div class="bee-row bee-row-38 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/suburban/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-suburban-3lz-g1w-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/suburban/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-suburban-3lz-g1w-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Suburban</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Suburban</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2102,15 +1951,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/tahoe/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-tahoe-1sp-gnt-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/tahoe/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-tahoe-1sp-gnt-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Tahoe</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Tahoe</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2140,15 +1983,9 @@ outline: 0;
 		<div class="bee-row bee-row-39 bee-desktop_hide">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/trailblazer/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-trailblazer-1sa-ghs-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/trailblazer/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-trailblazer-1sa-ghs-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Trailblazer</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Trailblazer</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2257,25 +2094,21 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-car-models">
-
+						<section class="rm-class" id="rm-car-models">
+						
 		<div class="bee-row bee-row-44">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">NEW CHEVROLET CARS</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
@@ -2311,15 +2144,9 @@ outline: 0;
 		<div class="bee-row bee-row-45">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/malibu/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-malibu-1sp-gnt-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/malibu/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-malibu-1sp-gnt-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Malibu</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Malibu</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2345,15 +2172,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/camaro/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-camaro-2ss-gcf-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/camaro/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-camaro-2ss-gcf-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Camaro</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Camaro</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2379,15 +2200,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/corvette/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-corvette-3lt-gkz-driver-front-3quarter-nav.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/corvette/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/2023-corvette-3lt-gkz-driver-front-3quarter-nav.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Corvette</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Corvette</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2489,26 +2304,21 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-
-	<section class="rm-class" id="rm-ev-models">
-
+						<section class="rm-class" id="rm-ev-models">
+						
 		<div class="bee-row bee-row-50">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/icons8-chevrolet-48%20%281%29.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">NEW CHEVROLET EVs</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Select Model to Shop</span> </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
@@ -2543,15 +2353,9 @@ outline: 0;
 		<div class="bee-row bee-row-51">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/bolt-ev/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/23-nav-bolt-ev-v2.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/bolt-ev/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/23-nav-bolt-ev-v2.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Bolt EV</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Bolt EV</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2577,15 +2381,9 @@ outline: 0;
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/new-vehicles/bolt-euv/" target="_self"><img alt=""
-								class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/23-nav-bolt-euv-v2.webp"
-								style="max-width:320px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/new-vehicles/bolt-euv/" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Chevy%20POWA/23-nav-bolt-euv-v2.webp" style="max-width:320px;" /></a></div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-							<span class="tinyMce-placeholder">Bolt EUV</span> </h1>
+						<h1 style="color:#053361;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:17px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;"><span class="tinyMce-placeholder">Bolt EUV</span> </h1>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<!-- HTML !-->
@@ -2694,25 +2492,21 @@ outline: 0;
 			</div>
 		</div>
 	</section>
-	<section class="rm-class" id="rm-used-models">
-
+						<section class="rm-class" id="rm-used-models">
+						
 		<div class="bee-row bee-row-56">
 			<div class="bee-row-content reverse">
 				<div class="bee-col bee-col-1 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-icons">
 						<div class="bee-icon bee-icon-last">
 							<div class="bee-content">
-								<div class="bee-icon-image"><img height="32px"
-										src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png"
-										width="auto" /></div>
+								<div class="bee-icon-image"><img height="32px" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/icons8-car-50.png" width="auto" /></div>
 								<div class="bee-icon-label bee-icon-label-right">USED VEHICLES</div>
 							</div>
 						</div>
 					</div>
 					<div class="bee-block bee-block-2 bee-heading">
-						<h1
-							style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
-							Select Body Style to Shop </h1>
+						<h1 style="color:#003459;direction:ltr;font-family:'Oxygen', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:44px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">Select Body Style to Shop </h1>
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w3">
@@ -2748,36 +2542,20 @@ outline: 0;
 		<div class="bee-row bee-row-57">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=SUVs&amp;_dFR%5Bbody%5D%5B1%5D=Vans&amp;_dFR%5Bbody%5D%5B2%5D=Wagon&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price"
-							target="_self"><img alt="" class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20SUVS.png"
-								style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=SUVs&amp;_dFR%5Bbody%5D%5B1%5D=Vans&amp;_dFR%5Bbody%5D%5B2%5D=Wagon&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20SUVS.png" style="max-width:300px;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Trucks&amp;_dFR%5Bbody%5D%5B1%5D=Standard%2520Bed&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price"
-							target="_self"><img alt="" class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20TRUCKS%20%28002%29_1.png"
-								style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Trucks&amp;_dFR%5Bbody%5D%5B1%5D=Standard%2520Bed&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20TRUCKS%20%28002%29_1.png" style="max-width:300px;" /></a></div>
 				</div>
 			</div>
 		</div>
 		<div class="bee-row bee-row-58">
 			<div class="bee-row-content no_stack">
 				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Cars&amp;_dFR%5Bbody%5D%5B1%5D=Convertible&amp;_dFR%5Bbody%5D%5B2%5D=Coupe&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price"
-							target="_self"><img alt="" class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20CARS%20%28002%29.png"
-								style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Bbody%5D%5B0%5D=Cars&amp;_dFR%5Bbody%5D%5B1%5D=Convertible&amp;_dFR%5Bbody%5D%5B2%5D=Coupe&amp;_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%20CARS%20%28002%29.png" style="max-width:300px;" /></a></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><a
-							href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_nR%5Bour_price%5D%5B%3C=%5D%5B0%5D=25990&amp;_paymentType=our_price"
-							target="_self"><img alt="" class="bee-center bee-autowidth"
-								src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%2025%20%28002%29.png"
-								style="max-width:300px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://www.reedchevystj.com/used-vehicles/?_dFR%5Btype%5D%5B0%5D=Used&amp;_dFR%5Btype%5D%5B1%5D=Certified%2520Used&amp;_nR%5Bour_price%5D%5B%3C=%5D%5B0%5D=25990&amp;_paymentType=our_price" target="_self"><img alt="" class="bee-center bee-autowidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/937703_922138/Email%20Landing%20Page%20Buttons%20MAR%202023%2025%20%28002%29.png" style="max-width:300px;" /></a></div>
 				</div>
 			</div>
 		</div>
