@@ -16,11 +16,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css" />
 	<script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+	<script src="main.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 
 <body>
+    <script id="vehicle-template" type="text/x-handlebars-template">
+        <div class="vehicle">
+            <h2>{{brand}}</h2>
+            <img src="{{imageSrc}}" alt="{{brand}} image">
+            <p>{{description}}</p>
+            <h1>Hi</h1>
+        </div>
+    </script>
 	<div class="bee-page-container">
 						<section id="rm-hero">
 		<div class="bee-row bee-row-2">
@@ -1311,7 +1321,7 @@
 		</div>
 						</section>
 	</div>
-	<script src="main.js"></script>
+
 </body>
 
 </html>
